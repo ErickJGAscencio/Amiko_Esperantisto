@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="esperanto, aprender, curso, gratis">
+    <link rel="icon" href="Imagenes/Logo_La-Amiko-Esperantisto.png">
+
+    <title>Amiko Esperantisto</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logoNombre">
+            <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo">
+            <h1>Amiko Esperantisto</h1>
+        </div>
+    
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="materiales.html">Materiales</a>
+                    <ul>
+                        <li><a href="curso.html">Curso</a></li>
+                        <li><a href="#">Documentos para aprender</a></li>
+                        <li><a href="#">Lecturas</a></li>
+                        <li><a href="#">Música</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <!-- <li><a href="other.html">Contacto</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contenido">
+        <aside>
+            <div class="slidebar">
+                <section class="videos">
+                    <h3>Introducción</h3>
+                    <div class="videos-items">
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 3 - Introducción')">Capítulo 0 - Introducción al curso</button>
+                    </div>
+                    <h3>Principiante</h3>
+                    <div class="videos-items">
+                        <button onclick="setNameVideo('Video1.mp4', 'Capítulo 1 - Introducción')">Capítulo 1 - Alfabeto</button>
+                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 2 - Introducción')">Capítulo 2 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 3 - Introducción')">Capítulo 3 - Introducción</button>
+                    </div>
+                    <h3>Intermedio</h3>
+                    <div class="videos-items">
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 10 - Introducción')">Capítulo 10 - Introducción</button>
+                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 11 - Introducción')">Capítulo 11 - Introducción</button>
+                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 12 - Introducción')">Capítulo 12 - Introducción</button>
+                    </div>
+                    <h3>Avanzado</h3>
+                    <div class="videos-items">
+                        <button onclick="setNameVideo('Video1.mp4', 'Capítulo 16 - Introducción')">Capítulo 16 - Introducción</button>
+                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 17 - Introducción')">Capítulo 17 - Introducción</button>
+                        <button onclick="setNameVideo('Video1.mp4', 'Capítulo 18 - Introducción')">Capítulo 18 - Introducción</button>
+                    </div>
+                </section>
+            </div>
+        </aside>
+        
+
+        <section class="reproductor">
+            <h2 id="titulo">...</h2>
+            <video id="videoPlayer" onclick="playPause()" controls>
+                <source id="VideoOnPlay" src="Videos/bandera-esperanto.mp4" type="video/mp4">
+                Tu navegador no soporta el vídeo de HTML5
+            </video>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Amiko Esperantisto. Todos los derechos reservados.</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
+
