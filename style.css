@@ -81,6 +81,17 @@ nav li:hover>ul {
     display: none;
 }
 
+/* PIE DE PÁGINA */
+footer {
+    background-color: #d8d7d7;
+    text-align: center;
+    /* Poner footer abajo */
+    padding: 7px;
+    bottom: 0;
+    width: auto;
+}
+
+
 /* Seccion principal */
 .seccion-principal {
     background-image: url(Imagenes/mini_documentos.jpg);
@@ -99,7 +110,6 @@ nav li:hover>ul {
 .seccion-principal h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    z-index: -1;
 }
 
 .aparecer {
@@ -166,6 +176,7 @@ a.boton:hover {
     background-color: #3E8E41;
 }
 
+
 /* SECCION SECUNDARIA */
 .seccion-secundaria {
     background-color: #f5f5f5;
@@ -219,28 +230,12 @@ a.boton:hover {
     background-color: #005f10;
 }
 
-
-/*SOBRE NOSOTROS*/
-.nosotros {
-    max-width: 800px;
-    margin: 0 auto;
+.ejemplo {
+    color: #3E8E41;
+    font-size: 100%;
+    font-style: oblique;
 }
 
-.nosotros h1 {
-    font-size: 36px;
-    color: #053f00;
-    margin: 2rem;
-}
-
-.nosotros p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-#amikoj{
-    font-size: 18px;
-}
 /* MATERIALES */
 .ficha_1 {
     display: flex;
@@ -258,7 +253,7 @@ a.boton:hover {
     border-radius: 1rem;
 }
 
-.ficha_1 p{
+.ficha_1 p {
     margin: 1rem
 }
 
@@ -292,7 +287,7 @@ a.boton:hover {
     border-radius: 1rem;
 }
 
-.ficha_2 p{
+.ficha_2 p {
     margin: 1rem
 }
 
@@ -300,15 +295,30 @@ a.boton:hover {
     color: white;
 }
 
-/* PIE DE PÁGINA */
-footer {
-    background-color: #d8d7d7;
-    text-align: center;
-    /* Poner footer abajo */
-    padding: 7px;
-    bottom: 0;
-    width: auto;
+/*SOBRE NOSOTROS*/
+.nosotros {
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.nosotros h1 {
+    font-size: 36px;
+    color: #053f00;
+    margin: 2rem;
+}
+
+.nosotros p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#amikoj {
+    font-size: 18px;
+}
+
+
+
 
 /* ESTILOS ESPECIFICOS */
 #inicio {
@@ -403,6 +413,7 @@ aside {
     justify-content: space-evenly;
     float: right;
     position: relative;
+
 }
 
 #titulo {
@@ -419,7 +430,13 @@ aside {
     opacity: 1;
 }
 
+video::-webkit-media-controls-volume-slider {
+    display: block;
+}
 
+video::-webkit-media-controls-mute-button {
+    display: block;
+}
 
 
 
@@ -454,7 +471,7 @@ aside {
         position: fixed;
         width: 70%;
         top: 128px;
-        left: 0%;
+        left: -10px;
         text-align: center;
         justify-content: space-around;
         transition: all 0.5s;
@@ -487,15 +504,14 @@ aside {
         /* display: none; */
         flex-direction: column;
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 120px;
         width: 80%;
         background-color: #4CAF50;
         border-radius: 5px;
         padding: 0;
-        transform: translateX(-300px);
+        transform: translateX(-350px);
     }
-    
+
     li a:hover,
     a.active {
         background: none;
@@ -503,16 +519,178 @@ aside {
     }
 
     #check:checked~ul {
+        top: 120px;
         left: -100;
         /* display: block; */
         transform: translateX(0px);
+        z-index: 2;
     }
 
     #check:checked~ul ul {
-        top: 20px;
-        left: -100;
+        top: 120px;
         /* display: block; */
-        transform: translateX(0px);
-        z-index: 1;
+        transform: translateX(50px);
+        z-index: 6;
+    }
+
+    /*INDEX*/
+    .seccion-secundaria-info {
+        margin: 1.5rem;
+    }
+
+    .seccion-secundaria-info a {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*MATERIALES*/
+    .ficha_1 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .ficha_1>img {
+        width: 100%;
+        height: 30%;
+        border-radius: 1rem;
+    }
+
+    .ficha_1 h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ficha_1 p {
+        margin: 1rem;
+    }
+
+    #btn_ver-mas {
+        background-color: #005f10;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    #btn_ver-mas:hover {
+        background-color: #4bc05e;
+    }
+
+    .ficha_2 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .ficha_2>img {
+        width: 100%;
+        height: 30%;
+        border-radius: 1rem;
+    }
+
+    .ficha_2 p {
+        margin: 1rem;
+    }
+
+    .ficha_2 h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info_material>h2 {
+        color: white;
+    }
+
+    /*CURSO*/
+    #contenido {
+        background-color: #00ff086f;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo {
+        color: #033f05;
+        font-size: 20px;
+    }
+
+    .reproductor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #videoPlayer {
+        max-width: 100%;
+        /* Cambio a ancho máximo 100% */
+        height: 14rem;
+    }
+
+    /*video::-webkit-media-controls-play-button {
+        background-color: #ff0000;
+        color: #ffffff;
+        border-radius: 50%;
+        border: none;
+        font-size: 20px;
+    } */
+
+    video::-webkit-media-controls-volume-slider {
+        display: none;
+    }
+
+    video::-webkit-media-controls-mute-button {
+        display: none;
+    }
+
+    /*tiempo transcurrido y faltanta*/
+    video::-webkit-media-controls-current-time-display,
+    video::-webkit-media-controls-time-remaining-display {
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    video::-webkit-media-controls-overflow-button {
+        display: none;
+    }
+
+    /*ASIDE*/
+    aside {
+        width: auto;
+        height: auto;
+        background-color: #f2f2f2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .videos h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #4CAF50;
+    }
+
+    .videos-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .videos-items button {
+        width: 100%;
+        border: none;
+        background-color: #4CAF50;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .videos-items button:hover {
+        background-color: #256e29;
+        color: #fff;
     }
 }
