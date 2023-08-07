@@ -42,43 +42,45 @@
     </header>
 
     <div id="contenido">
+        <section class="reproductor">
+            <h2 id="titulo">Capítulo 0 - Introducción al curso</h2>
+            <video controls id="videoPlayer" onclick="playPause()" controls>
+                <source id="VideoOnPlay" src="Videos/Video3.mp4" type="video/mp4">
+                Tu navegador no soporta el vídeo de HTML5
+            </video>
+        </section>
+
         <aside>
             <div class="slidebar">
                 <section class="videos">
                     <h3>Introducción</h3>
                     <div class="videos-items">
-                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 3 - Introducción')">Capítulo 0 - Introducción al curso</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 0 - Introducción al curso')">Capítulo 0 - Introducción al curso</button>
                     </div>
                     <h3>Principiante</h3>
                     <div class="videos-items">
-                        <button onclick="setNameVideo('Video1.mp4', 'Capítulo 1 - Introducción')">Capítulo 1 - Alfabeto</button>
-                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 2 - Introducción')">Capítulo 2 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 1 - Introducción')">Capítulo 1 - Alfabeto</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 2 - Introducción')">Capítulo 2 - Introducción</button>
                         <button onclick="setNameVideo('Video3.mp4', 'Capítulo 3 - Introducción')">Capítulo 3 - Introducción</button>
                     </div>
                     <h3>Intermedio</h3>
                     <div class="videos-items">
-                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 10 - Introducción')">Capítulo 10 - Introducción</button>
-                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 11 - Introducción')">Capítulo 11 - Introducción</button>
-                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 12 - Introducción')">Capítulo 12 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 10 - Introducción')">Capítulo 4 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 11 - Introducción')">Capítulo 5 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 12 - Introducción')">Capítulo 6 - Introducción</button>
                     </div>
                     <h3>Avanzado</h3>
                     <div class="videos-items">
-                        <button onclick="setNameVideo('Video1.mp4', 'Capítulo 16 - Introducción')">Capítulo 16 - Introducción</button>
-                        <button onclick="setNameVideo('Video2.mp4', 'Capítulo 17 - Introducción')">Capítulo 17 - Introducción</button>
-                        <button onclick="setNameVideo('Video1.mp4', 'Capítulo 18 - Introducción')">Capítulo 18 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 16 - Introducción')">Capítulo 7 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 17 - Introducción')">Capítulo 8 - Introducción</button>
+                        <button onclick="setNameVideo('Video3.mp4', 'Capítulo 18 - Introducción')">Capítulo 9 - Introducción</button>
                     </div>
                 </section>
             </div>
         </aside>
         
 
-        <section class="reproductor">
-            <h2 id="titulo">...</h2>
-            <video id="videoPlayer" onclick="playPause()" controls>
-                <source id="VideoOnPlay" src="Videos/bandera-esperanto.mp4" type="video/mp4">
-                Tu navegador no soporta el vídeo de HTML5
-            </video>
-        </section>
+        
     </div>
 
     <footer>
