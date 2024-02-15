@@ -1,90 +1,137 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="esperanto, aprender, curso, gratis">
-    <link rel="icon" href="Imagenes/Logo_La-Amiko-Esperantisto.png">
-
-    <title>Amiko Esperantisto</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="interfaz.css">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div id="logoNombre">
-            <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo">
-            <h1>Amiko Esperantisto</h1>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo" width="50" height="50"
+          class="d-inline-block align-text-top">
+        Amiko Esperantisto
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="n-index.html">Inicio</a>
+          <a class="nav-link active" href="n-materiales.html">Materiales</a>
+          <a class="nav-link active" href="#">Sobre nosotros</a>
         </div>
-    
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="materiales.html">Materiales</a>
-                    <ul>
-                        <li><a href="curso.html">Curso</a></li>
-                        <li><a href="#">Documentos para aprender</a></li>
-                        <li><a href="#">Lecturas</a></li>
-                        <li><a href="#">Música</a></li>
-                    </ul>
-                </li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <!-- <li><a href="other.html">Contacto</a></li> -->
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
 
-    <section class="todos_materiales">
-        <div class="ficha_1">
-            <img src="Imagenes/mini_curso-esperanto.jpg" alt="">
-            <div class="info_material">
-                <h2>Curso</h2>
-                <p>Aquí podrás ver una serie de videos donde se es explicado como es el idioma, su facilidad de aprendizaje y otros datos más sobre la misma. En tan pocas seciones podrás aprender y entender como se estructura el Esperanto y a como leerlo. Estos videos son para cualquiera que tenga que tenga ganas de aprender y para quienes solo quiere ver sobre este grandioso idioma. Adentrate y forma parte de los Esperantistas.</p>
-                    <a href="curso.html" id="btn_ver-mas">Ver más</a>
-            </div>
-        </div>
-        <div class="ficha_2">
-            <img src="Imagenes/mini_documentos.jpg" alt="">
-            <div class="info_material">
-                <h2>Documentos</h2>
-                <p>En esta sección encontrarás una selección cuidadosamente curada de documentos, manuales y guías diseñados para ayudarte en tu viaje de aprendizaje del Esperanto. Desde principiantes hasta aquellos que deseen perfeccionar sus habilidades, estos recursos abarcan desde gramática y vocabulario hasta ejercicios prácticos. Ya sea que prefieras sumergirte en material escrito o complementar tus lecciones con lecturas adicionales, aquí encontrarás herramientas valiosas para dominar el Esperanto.</p>
-                <a href="" id="btn_ver-mas">Ver más</a>
-            </div>
-        </div>
-        <div class="ficha_1">
-            <img src="https://th.bing.com/th/id/OIP.PvUdN-G5ZLh7QkalSMnOWQHaDx?pid=ImgDet&rs=1" alt="">
-            <div class="info_material">
-                <h2>Lecturas</h2>
-                <p>Sumérgete en un mundo de literatura esperantista con nuestra colección de lecturas fascinantes. Desde cuentos cortos hasta novelas, esta sección te ofrece una variedad de textos en Esperanto que abarcan diversos géneros y temas. Ya sea que estés buscando mejorar tu comprensión de lectura, ampliar tu vocabulario o simplemente disfrutar de historias en este hermoso idioma construido, estas lecturas te brindarán una ventana única a la cultura y creatividad esperantista.</p>
-                    <a href="" id="btn_ver-mas">Ver más</a>
-            </div>
-        </div>
-        <div class="ficha_2">
-            <img src="Imagenes/mini_musica.jpg" alt="">
-            <div class="info_material">
-                <h2>Música</h2>
-                <p>Descubre la riqueza de la música en Esperanto a través de esta selección de canciones y composiciones de artistas de todo el mundo. Desde pegajosas canciones pop hasta melódicas piezas clásicas, aquí encontrarás una amplia gama de estilos musicales que demuestran el poder y la belleza del Esperanto como medio de expresión artística. Sumérgete en la sonoridad única de este idioma mientras disfrutas de melodías que te emocionarán y te harán vibrar en armonía con la comunidad esperantista global.</p>
-                    <a href="" id="btn_ver-mas">Ver más</a>
-            </div>
-        </div>
-    </section>
+  <div class="container col-sm-12 col-md-8 col-l-8 col-xl-8 py-5">
+    <div class="cards">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="Imagenes/mini_curso-esperanto.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kurso</h5>
+              <p class="card-text">Aquí podrás ver una serie de videos donde se es explicado como es el idioma, su
+                facilidad de aprendizaje y
+                otros datos más sobre el Esperanto. En tan pocas seciones podrás aprender y entender como se estructura
+                el
+                Esperanto y a como leerlo. Estos videos son para cualquiera que tenga que tenga ganas de aprender y para
+                quienes solo quiere ver sobre este grandioso idioma. Adentrate y forma parte de los Esperantistas.</p>
 
-    <script src="javascript.js"></script>
+              <a href="n-curso.html"><button type="button" class="btn btn-success">Ver más</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Imagenes/mini_documentos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dokumentoj</h5>
+              <p class="card-text">En esta sección encontrarás una selección cuidadosamente curada de documentos,
+                manuales y guías diseñados
+                para ayudarte en tu viaje de aprendizaje del Esperanto. Desde principiantes hasta aquellos que deseen
+                perfeccionar sus habilidades, estos recursos abarcan desde gramática y vocabulario hasta ejercicios
+                prácticos. Ya sea que prefieras sumergirte en material escrito o complementar tus lecciones con lecturas
+                adicionales.</p>
 
-    <footer>
-        <p>Copyright &copy;
-            <script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script> Amiko Esperantisto. Todos los derechos reservados.
-        </p>
-    </footer>
+              <a href="n-curso.html"><button type="button" class="btn btn-success">Ver más</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Imagenes/mini_documentos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Libroj</h5>
+              <p class="card-text">Sumérgete en un mundo de literatura esperantista con nuestra colección de lecturas
+                fascinantes. Desde
+                cuentos cortos hasta novelas, esta sección te ofrece una variedad de textos en Esperanto que abarcan
+                diversos géneros y temas. Ya sea que estés buscando mejorar tu comprensión de lectura, ampliar tu
+                vocabulario o simplemente disfrutar de historias en este hermoso idioma construido, estas lecturas te
+                brindarán una ventana única a la cultura y creatividad esperantista.</p>
+
+              <a href="n-curso.html"><button type="button" class="btn btn-success">Ver más</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Imagenes/mini_musica.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Muziko</h5>
+              <p class="card-text">Descubre la riqueza de la música en Esperanto a través de esta selección de canciones
+                y composiciones de
+                artistas de todo el mundo. Desde pegajosas canciones pop hasta melódicas piezas clásicas, aquí
+                encontrarás
+                una amplia gama de estilos musicales que demuestran el poder y la belleza del Esperanto como medio de
+                expresión artística. Sumérgete en la sonoridad única de este idioma mientras disfrutas de melodías que
+                te
+                emocionarán y te harán vibrar en armonía con la comunidad esperantista global.</p>
+
+              <a href="n-curso.html"><button type="button" class="btn btn-success">Ver más</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
 </body>
+<footer class="bd-footer py-4 py-md-5 mt-5 bg-success">
+  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-success">
+    <div class="row">
+      <div class="col-lg-6 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/">
+          <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo" width="50" height="50"
+            class="d-inline-block align-text-top"><span class="fs-5 ">Amiko Esperantisto</span>
+        </a>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled ">
+          <li class="mb-2"><a href="practice-boots-inter.html" class="no-link">Inicio</a></li>
+          <li class="mb-2"><a href="/docs/5.3/" class="no-link">Materiales</a></li>
+          <li class="mb-2"><a href="/docs/5.3/examples/" class="no-link">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>
