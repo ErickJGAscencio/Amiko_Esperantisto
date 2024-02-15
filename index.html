@@ -1,82 +1,123 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="esperanto, aprender, curso, gratis">
-    <link rel="icon" href="Imagenes/Logo_La-Amiko-Esperantisto.png">
-
-    <title>Amiko Esperantisto</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="interfaz.css">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div id="logoNombre">
-            <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo">
-            <h1>Amiko Esperantisto</h1>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo" width="50" height="50"
+          class="d-inline-block align-text-top">
+        Amiko Esperantisto
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="n-index.html">Inicio</a>
+          <a class="nav-link active" href="n-materiales.html">Materiales</a>
+          <a class="nav-link active" href="#">Sobre nosotros</a>
         </div>
-    
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="materiales.html">Materiales</a>
-                    <ul>
-                        <li><a href="curso.html">Curso</a></li>
-                        <li><a href="#">Documentos</a></li>
-                        <li><a href="#">Lecturas</a></li>
-                        <li><a href="#">Música</a></li>
-                    </ul>
-                </li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <!-- <li><a href="contacto.html">Contacto</a></li> -->
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
 
-    <section class="seccion-principal">
-        <h1 class="aparecer" id="txt-1">Saluton, Amikoj!</h1>
-        <p class="aparecer" id="txt-2">Bonvenon amiko!</p>
-        <a href="sobre-nosotros.html" class="boton">¿Quiénes somos?</a>
-    </section>
+  <div class="position-relative d-flex justify-content-center align-items-center">
+    <img src="Imagenes/mini_documentos.jpg" class="img-fluid" alt="...">
+    <h3 class="text-center position-absolute top-50 start-50 translate-middle">Saluton, Amikoj!</h3>
+    <button type="button" class="btn btn-success btn-lg position-absolute top-50 start-50 translate-middle">¡A
+      Conocer!</button>
+  </div>
 
-    <section class="seccion-secundaria">
-        <div class="seccion-secundaria-info">
-            <h1>El Esperanto</h1>
-            <p>El Esperanto es un idioma construido diseñado para ser una lengua franca internacional. Fue creado a finales del siglo XIX por L.L. Zamenhof, un oftalmólogo polaco, con la visión de superar las barreras del idioma y promover la comunicación entre personas de diferentes culturas.</p>
-            <img src="https://th.bing.com/th/id/R.041953c6de889efb5e47146b36e95b8b?rik=6dk9Fw%2f8wM4C1A&riu=http%3a%2f%2fscihi.org%2fwp-content%2fuploads%2f2015%2f11%2f1024px-1908-kl-t-zamenhof-768x1078.jpg&ehk=dsblweLFVMCawHh9ACZDhONpAMBxC23vSXw74o4bdYs%3d&risl=&pid=ImgRaw&r=0" alt="L.L. Zamenhof">
-            <img src="https://th.bing.com/th/id/R.76a827f70bcead09743e47c21fdab1b5?rik=aN3%2btVSPXFiIrw&pid=ImgRaw&r=0" alt="Bandera Esperantista">
-            <p>Una de las características distintivas del Esperanto es su simplicidad y regularidad gramatical. La estructura del idioma se basa en reglas consistentes y predecibles, lo que facilita su aprendizaje y uso. Además, utiliza un sistema de raíces léxicas que permite formar nuevas palabras mediante el uso de prefijos y sufijos.</p>
-            <h4>Ejemplo</h4>
-            <p class="ejemplo">Esp | Luna    -   Llenar   -   Luna llena</p>
-            <p class="ejemplo">Esper | Luno    -   Pleni   -   Plenluno</p>
-            <p>El Esperanto se concibió como un idioma neutral, sin favorecer a ninguna cultura o grupo étnico en particular. Se eligieron elementos gramaticales y léxicos comunes en varios idiomas europeos para lograr esta neutralidad y facilitar su comprensión para hablantes de diferentes idiomas maternos.</p>
-            <p>A lo largo de los años, el Esperanto ha desarrollado una comunidad global de hablantes. Se han establecido asociaciones y organizaciones esperantistas en diferentes países, y se llevan a cabo congresos y encuentros para fomentar el uso y el aprendizaje del idioma. Además, existen numerosos recursos educativos disponibles en línea para aquellos que deseen aprender Esperanto.</p>
-            <p>Aunque el Esperanto no tiene el estatus de idioma oficial en ningún país, ha recibido cierto reconocimiento por parte de gobiernos y organizaciones internacionales. La UNESCO, por ejemplo, ha reconocido el Esperanto como una herramienta para promover la diversidad cultural y la comunicación internacional.</p>
-            <p>El Esperanto se utiliza en diversos contextos, como la correspondencia internacional, el turismo, la literatura y la música. Aunque su uso no es tan generalizado como el de los idiomas naturales, sigue siendo una interesante manifestación del deseo de una comunicación más fluida y una mayor comprensión entre las personas, sin importar su origen o lengua materna.</p>
-            <p>El aprendizaje del Esperanto puede brindar beneficios tanto lingüísticos como culturales. Al ser una lengua construida, su gramática y estructura pueden ayudar a los estudiantes a comprender mejor los principios del lenguaje en general. Además, el estudio del Esperanto fomenta la apertura intercultural y el entendimiento entre personas de diferentes nacionalidades.</p>
-            <p>En resumen, el Esperanto es un idioma construido que busca promover la comunicación internacional y el entendimiento mutuo. Aunque su uso no es tan extendido como el de los idiomas naturales, tiene una comunidad activa de hablantes y ofrece beneficios educativos y culturales a aquellos que deciden aprenderlo.</p>
-        </div>
-        <a href="curso.html">Entrar al curso</a>
-    </section>
-    
 
-    <script src="javascript.js"></script>
+  <div class="container col-sm-12 col-md-8 col-l-8 col-xl-8 py-5">
+    <h1>El Esperanto</h1>
+    <p>El Esperanto es un idioma construido diseñado para ser una lengua franca internacional. Fue creado a finales del
+      siglo XIX por L.L. Zamenhof, un oftalmólogo polaco, con la visión de superar las barreras del idioma y promover la
+      comunicación entre personas de diferentes culturas.</p>
+    <div class="rounded float-end">
+      <div class="text-center">
+        <img
+          src="https://th.bing.com/th/id/R.041953c6de889efb5e47146b36e95b8b?rik=6dk9Fw%2f8wM4C1A&riu=http%3a%2f%2fscihi.org%2fwp-content%2fuploads%2f2015%2f11%2f1024px-1908-kl-t-zamenhof-768x1078.jpg&ehk=dsblweLFVMCawHh9ACZDhONpAMBxC23vSXw74o4bdYs%3d&risl=&pid=ImgRaw&r=0"
+          class="rounded img-thumbnail" style="max-width: 200px;" alt="L.L. Zamenhof">
+      </div>
+      <div class="text-center">
+        <img src="https://th.bing.com/th/id/R.76a827f70bcead09743e47c21fdab1b5?rik=aN3%2btVSPXFiIrw&pid=ImgRaw"
+          class="rounded img-thumbnail" style="max-width: 200px;" alt="Bandera Esperantista">
+      </div>
+    </div>
 
-    <footer>
-        <p>Copyright &copy;
-            <script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script> Amiko Esperantisto. Todos los derechos reservados.
-        </p>
-    </footer>
+
+    <p>Una de las características distintivas del Esperanto es su simplicidad y regularidad gramatical. La estructura
+      del idioma se basa en reglas consistentes y predecibles, lo que facilita su aprendizaje y uso. Además, utiliza un
+      sistema de raíces léxicas que permite formar nuevas palabras mediante el uso de prefijos y sufijos.</p>
+
+    <h4 class="exp text-center">Ejemplo</h4>
+    <p class="exp text-center fst-italic fw-bolder" style="color: #3E8E41">Esp | Luna - Llenar - Luna llena</p>
+    <p class="exp text-center fst-italic fw-bolder" style="color: #3E8E41">Esper | Luno - Pleni - Plenluno</p>
+
+    <p>El Esperanto se concibió como un idioma neutral, sin favorecer a ninguna cultura o grupo étnico en particular. Se
+      eligieron elementos gramaticales y léxicos comunes en varios idiomas europeos para lograr esta neutralidad y
+      facilitar su comprensión para hablantes de diferentes idiomas maternos.</p>
+    <p>A lo largo de los años, el Esperanto ha desarrollado una comunidad global de hablantes. Se han establecido
+      asociaciones y organizaciones esperantistas en diferentes países, y se llevan a cabo congresos y encuentros para
+      fomentar el uso y el aprendizaje del idioma. Además, existen numerosos recursos educativos disponibles en línea
+      para aquellos que deseen aprender Esperanto.</p>
+    <p>Aunque el Esperanto no tiene el estatus de idioma oficial en ningún país, ha recibido cierto reconocimiento por
+      parte de gobiernos y organizaciones internacionales. La UNESCO, por ejemplo, ha reconocido el Esperanto como una
+      herramienta para promover la diversidad cultural y la comunicación internacional.</p>
+    <p>El Esperanto se utiliza en diversos contextos, como la correspondencia internacional, el turismo, la literatura y
+      la música. Aunque su uso no es tan generalizado como el de los idiomas naturales, sigue siendo una interesante
+      manifestación del deseo de una comunicación más fluida y una mayor comprensión entre las personas, sin importar su
+      origen o lengua materna.</p>
+    <p>El aprendizaje del Esperanto puede brindar beneficios tanto lingüísticos como culturales. Al ser una lengua
+      construida, su gramática y estructura pueden ayudar a los estudiantes a comprender mejor los principios del
+      lenguaje en general. Además, el estudio del Esperanto fomenta la apertura intercultural y el entendimiento entre
+      personas de diferentes nacionalidades.</p>
+    <p>En resumen, el Esperanto es un idioma construido que busca promover la comunicación internacional y el
+      entendimiento mutuo. Aunque su uso no es tan extendido como el de los idiomas naturales, tiene una comunidad
+      activa de hablantes y ofrece beneficios educativos y culturales a aquellos que deciden aprenderlo.</p>
+  </div>
+  <!--Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+<footer class="bd-footer py-4 py-md-5 mt-5 bg-success">
+  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-success">
+    <div class="row">
+      <div class="col-lg-6 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/">
+          <img src="Imagenes/Logo_La-Amiko-Esperantisto.png" alt="Logo" width="50" height="50"
+            class="d-inline-block align-text-top"><span class="fs-5 ">Amiko Esperantisto</span>
+        </a>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled ">
+          <li class="mb-2"><a href="practice-boots-inter.html">Inicio</a></li>
+          <li class="mb-2"><a href="/docs/5.3/">Materiales</a></li>
+          <li class="mb-2"><a href="/docs/5.3/examples/">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>
