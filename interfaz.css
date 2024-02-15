@@ -1,0 +1,21 @@
+body{
+    background: white;
+  }
+  
+  #descripcion{
+    resize: none;
+  }
+  
+  .centrado{
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .bg-white{
+    background-color: #fff;
+  }
+  
+  .no-link {
+    text-decoration: none;
+    color: inherit;
+  }
