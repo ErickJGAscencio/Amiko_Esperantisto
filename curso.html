@@ -46,44 +46,76 @@
         </section>
       </div>
 
-      <div class="col-md-4 col-lg-4 col-xl-4">
-        <div class="d-grid gap-2">
-          <h3>Introducción</h3>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 0 - Introducción al curso')">Capítulo 0 - Introducción al
-            curso</button>
-
-          <h3>Principiante</h3>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 1 - Introducción')">Capítulo 1 - Alfabeto</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 2 - Introducción')">Capítulo 2 - Introducción</button>
-
-          <h3>Intermedio</h3>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 3 - Introducción')">Capítulo 3 - Alfabeto</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 4 - Introducción')">Capítulo 4 - Introducción</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 5 - Introducción')">Capítulo 5 - Introducción</button>
-
-          <h3>Avanzado</h3>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 6 - Introducción')">Capítulo 6 - Introducción</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capiútlo 7 - Introducción')">Capiútlo 7 - Introducción</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 8 - Introducción')">Capítulo 8 - Introducción</button>
-
-          <h3>Experto</h3>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 9 - Introducción')">Capítulo 9 - Introducción</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 10 - Introducción')">Capítulo 10 - Introducción</button>
-          <button class="btn btn-outline-success" type="button"
-            onclick="setNameVideo('Video3.mp4', 'Capítulo 11 - Introducción')">Capítulo 11 - Introducción</button>
+      <div class="accordion col-md-4 col-lg-4 col-xl-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Introducción
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 0 - Introducción al curso')">Capítulo 0 - Introducción
+                  al curso</button>
+              </div>
+            </div>
+          </div>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Principiante
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 1 - Introducción')">Capítulo 1 - Alfabeto</button>
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 2 - Introducción')">Capítulo 2 - Introducción</button>
+              </div>
+            </div>
+          </div>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Intermedio
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 3 - Introducción')">Capítulo 3 - Alfabeto</button>
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 4 - Introducción')">Capítulo 4 - Introducción</button>
+              </div>
+            </div>
+          </div>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Avanzado
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 5 - Introducción')">Capítulo 5 - Introducción</button>
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 6 - Introducción')">Capítulo 6 - Introducción</button>
+                <button class="btn btn-outline-success" type="button"
+                  onclick="setNameVideo('Video3.mp4', 'Capítulo 7 - Introducción')">Capítulo 7 - Introducción</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 
